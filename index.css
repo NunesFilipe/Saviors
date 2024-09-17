@@ -1,0 +1,48 @@
+body {
+    color: blue;
+    background-image: url('img/fundo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "Arial Black", serif;
+}
+a img {
+    width: 50px;
+    height: 50px;
+}
+ul img {
+    width: 50px;
+    height: 50px;
+}
+header img {
+    width: 480px;
+    height: 180px;
+}
+header {
+    text-align: center;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+footer img {
+    width: 40px;
+    height: 40px;
+}
+footer a {
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: larger;
+}
+footer p {
+    margin-top: 5px;
+    color: red;
+
+}
+body img {
+    text-align: center;
+}
+.container {
+padding: 0px 50px;
+}
