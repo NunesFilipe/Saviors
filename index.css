@@ -1,48 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    color: blue;
-    background-image: url('img/fundo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     font-family: "Arial Black", serif;
+    background: #000 url('img/fundo.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
 }
-a img {
-    width: 50px;
-    height: 50px;
-}
-ul img {
-    width: 50px;
-    height: 50px;
-}
-header img {
-    width: 780px;
-    height: 380px;
-}
-header {
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
 }
+
+header img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
 footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
 }
-footer img {
-    width: 40px;
-    height: 40px;
-}
-footer a {
-    margin: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: larger;
-}
-footer p {
-    margin-top: 5px;
-    color: red;
 
+footer a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: red;
+    font-size: 1rem;
 }
-body img {
-    text-align: center;
+
+footer img {
+    width: 48px;
+    height: 48px;
 }
-.container {
-padding: 0px 50px;
+
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer a {
+        margin: 0 20px;
+        font-size: 1.2rem;
+    }
 }
